@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "BfeuSGGTyP/M+iuubHLkf2dhJukuCUh0GB228Za1Pu2RPS0kCFAy7htslseufQ2T7oxQ+7CqhVqrIhaW9tK1pA==",
+  "dgSpecHash": "PXiIAn6RbYVvX+XXbgXeizGNB70BFHM7XJjYHP/1sar7af4PfnyEv9+fr9Ocny+wNOYqeG9FPuqZ5lJ1Cyo5EQ==",
   "success": true,
-  "projectFilePath": "/Users/khayalmammadzada/Desktop/nest_backend/Nest/Nest/Nest.csproj",
+  "projectFilePath": "/Users/khayalmammadzada/Desktop/nest_back/Nest/Nest.csproj",
   "expectedPackageFiles": [
     "/Users/khayalmammadzada/.nuget/packages/humanizer.core/2.8.26/humanizer.core.2.8.26.nupkg.sha512",
     "/Users/khayalmammadzada/.nuget/packages/microsoft.csharp/4.7.0/microsoft.csharp.4.7.0.nupkg.sha512",

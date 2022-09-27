@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "/Users/khayalmammadzada/Desktop/nest_backend/Nest/Nest/Nest.csproj": {}
+    "/Users/khayalmammadzada/Desktop/nest_back/Nest/Nest.csproj": {}
   },
   "projects": {
-    "/Users/khayalmammadzada/Desktop/nest_backend/Nest/Nest/Nest.csproj": {
+    "/Users/khayalmammadzada/Desktop/nest_back/Nest/Nest.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/khayalmammadzada/Desktop/nest_backend/Nest/Nest/Nest.csproj",
+        "projectUniqueName": "/Users/khayalmammadzada/Desktop/nest_back/Nest/Nest.csproj",
         "projectName": "Nest",
-        "projectPath": "/Users/khayalmammadzada/Desktop/nest_backend/Nest/Nest/Nest.csproj",
+        "projectPath": "/Users/khayalmammadzada/Desktop/nest_back/Nest/Nest.csproj",
         "packagesPath": "/Users/khayalmammadzada/.nuget/packages/",
-        "outputPath": "/Users/khayalmammadzada/Desktop/nest_backend/Nest/Nest/obj/",
+        "outputPath": "/Users/khayalmammadzada/Desktop/nest_back/Nest/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/Users/khayalmammadzada/.nuget/NuGet/NuGet.Config"

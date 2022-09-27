@@ -16,6 +16,7 @@
     <Folder Include="Views\Vendor\" />
     <Folder Include="DAL\" />
     <Folder Include="ViewModels\" />
+    <Folder Include="Services\" />
   </ItemGroup>
   <ItemGroup>
     <None Remove="Models\" />
@@ -28,6 +29,7 @@
     <None Remove="ViewModels\" />
     <None Remove="Newtonsoft.Json" />
     <None Remove="Z.EntityFramework.Plus.EFCore" />
+    <None Remove="Services\" />
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="Microsoft.EntityFrameworkCore" Version="6.0.9" />
