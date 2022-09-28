@@ -8,6 +8,7 @@
 
   <ItemGroup>
     <Content Remove="wwwroot\" />
+    <Content Remove="wwwroot\manage\" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="wwwroot\" />
@@ -17,6 +18,13 @@
     <Folder Include="DAL\" />
     <Folder Include="ViewModels\" />
     <Folder Include="Services\" />
+    <Folder Include="Areas\" />
+    <Folder Include="wwwroot\manage\" />
+    <Folder Include="Areas\Manage\" />
+    <Folder Include="Areas\Manage\Views\" />
+    <Folder Include="Areas\Manage\Models\" />
+    <Folder Include="Areas\Manage\Controllers\" />
+    <Folder Include="Areas\Manage\Data\" />
   </ItemGroup>
   <ItemGroup>
     <None Remove="Models\" />
@@ -30,6 +38,14 @@
     <None Remove="Newtonsoft.Json" />
     <None Remove="Z.EntityFramework.Plus.EFCore" />
     <None Remove="Services\" />
+    <None Remove="Areas\" />
+    <None Remove="Microsoft.VisualStudio.Web.CodeGeneration.Design" />
+    <None Remove="Swashbuckle.AspNetCore" />
+    <None Remove="Areas\Manage\" />
+    <None Remove="Areas\Manage\Views\" />
+    <None Remove="Areas\Manage\Models\" />
+    <None Remove="Areas\Manage\Controllers\" />
+    <None Remove="Areas\Manage\Data\" />
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="Microsoft.EntityFrameworkCore" Version="6.0.9" />
@@ -40,6 +56,8 @@
     <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="6.0.9" />
     <PackageReference Include="Newtonsoft.Json" Version="13.0.1" />
     <PackageReference Include="Z.EntityFramework.Plus.EFCore" Version="6.15.0" />
+    <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="6.0.7" />
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="6.3.0" />
   </ItemGroup>
   <ItemGroup>
     <None Include="..\.editorconfig" />

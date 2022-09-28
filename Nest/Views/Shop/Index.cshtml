@@ -71,31 +71,38 @@
                     </div>
                 </div>
 
-                <div class="product-list mb-50 list-view">
-                    <partial name="_ProductListPartialView" model="@Model.Products">
+                <div class="nest-product">
 
-                        <!--single product-->
+                    <partial name="_ProductListPartialView" model="@Model.Products">
                 </div>
-                <!--product grid-->
                 <div class="pagination-area mt-20 mb-20">
                     <nav aria-label="Page navigation example">
                         <ul class="pagination justify-content-start">
                             <li class="page-item">
-                                <a class="page-link" href="#"><i class="fi-rs-arrow-small-left"></i></a>
+                                @if (ViewBag.ActivePage > 1 && ViewBag.ActivePage<=ViewBag.PageCount)
+                                {
+                                    <a class="page-link" asp-route-page="@(ViewBag.ActivePage-1)" ><i class="fi-rs-arrow-small-left"></i></a>
+
+                                }
                             </li>
-                            <li class="page-item"><a class="page-link" href="#">1</a></li>
-                            <li class="page-item active"><a class="page-link" href="#">2</a></li>
-                            <li class="page-item"><a class="page-link" href="#">3</a></li>
-                            <li class="page-item"><a class="page-link dot" href="#">...</a></li>
-                            <li class="page-item"><a class="page-link" href="#">6</a></li>
-                            <li class="page-item">
-                                <a class="page-link" href="#"><i class="fi-rs-arrow-small-right"></i></a>
-                            </li>
+                            @for (int i = 1; i <= ViewBag.PageCount; i++)
+                            {
+                                <li class="page-item @(ViewBag.ActivePage==i?"active":"")"><a class="page-link"  asp-route-page="@i">@i</a></li>
+
+                            }
+                        <li class="page-item">
+                            @if (ViewBag.ActivePage > 0 && ViewBag.ActivePage < ViewBag.PageCount)
+                            {
+                                <a class="page-link" asp-route-page="@(ViewBag.ActivePage+1)" ><i class="fi-rs-arrow-small-right"></i></a>
+
+                            }
+                        </li>
                         </ul>
                     </nav>
                 </div>
                 <!--End Deals-->
             </div>
+
             <div class="col-lg-1-5 primary-sidebar sticky-sidebar">
                 <!-- Fillter By Price -->
                 <form asp-controller="Shop" asp-action="Index" method="Post" id="FilterForm" class="sidebar-widget price_range range mb-30">
@@ -207,8 +214,8 @@
                 url: "/Shop/Index",
                 data: data
             }).done(function (res) {
-                console.log(res);
-                $(".list-view").html(res)
+              
+                $(".nest-product").html(res)
             });
         });</script>
 }
