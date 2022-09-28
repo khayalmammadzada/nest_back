@@ -1,4 +1,6 @@
 ﻿using System;
+using System.ComponentModel.DataAnnotations.Schema;
+
 namespace Nest.Models
 {
     public class Slider
@@ -8,6 +10,8 @@ namespace Nest.Models
         public string Subtitle { get; set; }
         public string ImageUrl { get; set; }
         public int Order { get; set; }
+        [NotMapped]
+        public IFormFile ImageFile { get; set; }
     }
 }
 
