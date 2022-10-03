@@ -1,42 +1,35 @@
 ﻿<Properties StartupConfiguration="{D4E4E67C-9C3D-4386-99AD-BB8ED66ED5C9}|Default">
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MultiItemStartupConfigurations />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
-  <MonoDevelop.Ide.Workbench ActiveDocument="Nest/Services/LayoutService.cs">
+  <MonoDevelop.Ide.ItemProperties.Nest PreferredExecutionTarget="/Applications/Safari.app" />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Nest/Areas/Manage/Controllers/ProductController.cs">
     <Files>
-      <File FileName="Nest/ViewModels/BasketItem.cs" Line="11" Column="1" />
-      <File FileName="Nest/ViewModels/BasketVM.cs" Line="9" Column="48" />
-      <File FileName="Nest/ViewModels/ShopIndexVM.cs" Line="10" Column="62" />
-      <File FileName="Nest/Views/Shop/Index.cshtml" Line="17" Column="27" />
-      <File FileName="Nest/Models/Setting.cs" Line="12" Column="1" />
-      <File FileName="Nest/Services/LayoutService.cs" Line="23" Column="1" />
-      <File FileName="Nest/Controllers/ShopController.cs" Line="83" Column="33" />
-      <File FileName="Nest/Program.cs" Line="15" Column="27" />
-      <File FileName="Nest/appsettings.json" Line="1" Column="1" />
-      <File FileName="Nest/ViewModels/ShopAndFilterVM.cs" Line="8" Column="51" />
-      <File FileName="Nest/ViewModels/VendorDetailVM.cs" Line="9" Column="59" />
-      <File FileName="Nest/Controllers/VendorController.cs" Line="43" Column="10" />
-      <File FileName="Nest/Views/Vendor/Details.cshtml" Line="233" Column="1" />
-      <File FileName="Nest/Views/Shared/_ProductListPartialView.cshtml" Line="28" Column="33" />
+      <File FileName="Nest/Areas/Manage/Controllers/ProductController.cs" Line="144" Column="55" />
+      <File FileName="Nest/Areas/Manage/Controllers/CategoryController.cs" Line="124" Column="24" />
+      <File FileName="Nest/Areas/Manage/Controllers/VendorController.cs" Line="104" Column="14" />
+      <File FileName="Nest/Areas/Manage/Controllers/SliderController.cs" Line="65" Column="1" />
+      <File FileName="Nest/Models/Product.cs" Line="1" Column="1" />
+      <File FileName="Nest/Models/ProductImage.cs" Line="1" Column="1" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="Nest" expanded="True">
             <Node name="Nest" expanded="True">
-              <Node name="Controllers" expanded="True" />
-              <Node name="DAL" expanded="True" />
-              <Node name="Models" expanded="True" />
-              <Node name="Services" expanded="True">
-                <Node name="LayoutService.cs" selected="True" />
+              <Node name="Areas" expanded="True">
+                <Node name="Manage" expanded="True">
+                  <Node name="Controllers" expanded="True">
+                    <Node name="ProductController.cs" selected="True" />
+                  </Node>
+                </Node>
               </Node>
-              <Node name="ViewModels" expanded="True" />
-              <Node name="Views" expanded="True">
-                <Node name="Shared" expanded="True" />
-                <Node name="Shop" expanded="True" />
-                <Node name="Vendor" expanded="True" />
+              <Node name="Models" expanded="True" />
+              <Node name="Utlis" expanded="True">
+                <Node name="Extensions" expanded="True" />
               </Node>
             </Node>
           </Node>
@@ -47,6 +40,4 @@
       </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>
-  <MultiItemStartupConfigurations />
-  <MonoDevelop.Ide.ItemProperties.Nest PreferredExecutionTarget="/Applications/Safari.app" />
 </Properties>

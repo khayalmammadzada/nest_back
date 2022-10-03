@@ -28,6 +28,10 @@
     <Folder Include="Areas\Manage\Views\Product\" />
     <Folder Include="Areas\Manage\Views\Category\" />
     <Folder Include="Areas\Manage\Views\Slider\" />
+    <Folder Include="Utlis\" />
+    <Folder Include="Utlis\Constants\" />
+    <Folder Include="Utlis\Extensions\" />
+    <Folder Include="Areas\Manage\Views\Vendor\" />
   </ItemGroup>
   <ItemGroup>
     <None Remove="Models\" />
@@ -52,6 +56,10 @@
     <None Remove="Areas\Manage\Views\Product\" />
     <None Remove="Areas\Manage\Views\Category\" />
     <None Remove="Areas\Manage\Views\Slider\" />
+    <None Remove="Utlis\" />
+    <None Remove="Utlis\Constants\" />
+    <None Remove="Utlis\Extensions\" />
+    <None Remove="Areas\Manage\Views\Vendor\" />
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="Microsoft.EntityFrameworkCore" Version="6.0.9" />

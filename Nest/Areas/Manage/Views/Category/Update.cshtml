@@ -1,11 +1,12 @@
 ﻿@{
-    ViewData["Title"] = "Create";
+    ViewData["Title"] = "Update";
 }
+
 @model Category
 <div class="row">
     <div class="col-9">
         <div class="content-header">
-            <h2 class="content-title">Add New Category</h2>
+            <h2 class="content-title">Edit Product</h2>
             <div>
                 <button class="btn btn-light rounded font-sm mr-5 text-body hover-up">Save to draft</button>
                 <button class="btn btn-md rounded font-sm hover-up">Publich</button>
@@ -20,19 +21,18 @@
                 </div>
                 <div class="card-body">
                     <div asp-validation-summary="ModelOnly">
-
                     </div>
                     <div>
-                        <label class="text-center w-100" asp-for="ImageFile"><img src="~/manage/assets/imgs/theme/upload.svg" alt="" /></label>
+                        <label class="text-center w-100" asp-for="ImageFile"><img src="~/assets/imgs/shop/@Model.ImageUrl" alt="" /></label>
                         <input class="form-control" asp-for="ImageFile" />
                         <span class="text-danger" asp-validation-for="ImageFile"></span>
                     </div>
                     <div class="mb-4">
                         <label class="form-label" asp-for="Name"></label>
-                        <input class="form-control" asp-for="Name"/>
+                        <input class="form-control" asp-for="Name" />
                         <span class="text-danger" asp-validation-for="Name"></span>
                     </div>
-                    <button type="submit" class="btn btn-success">Create</button>
+                    <button type="submit" class="btn btn-success text-light">Update</button>
                 </div>
             </div>
         </form>

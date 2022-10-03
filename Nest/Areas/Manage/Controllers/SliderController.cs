@@ -6,8 +6,8 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.ModelBinding;
 using Microsoft.EntityFrameworkCore;
 using Nest.DAL;
-using Nest.Utilities;
 using Nest.Models;
+using Nest.Utlis.Extensions;
 
 // For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
 
@@ -41,21 +41,28 @@ namespace Nest.Areas.Manage.Controllers
         {
             if(!ModelState.IsValid) return View();
 
-            if(slider.ImageFile is null)
+            if (slider.ImageFile is null)
             {
-                ModelState.AddModelError("ImageFile", "You have to choose at least one image");
+                ModelState.AddModelError("ImageFile", "Zəhmət olmasa profil şəklinizi yükləyin");
                 return View();
             }
-
-            if (slider.ImageFile.ImageIsOkay(2))
+            var sliderImg = slider.ImageFile;
+            if (!sliderImg.CheckFileExtension("image/"))
             {
-                ModelState.AddModelError("Photo", "Please choose valid image file");
+                ModelState.AddModelError("ImageFile", "Yüklədiyiniz fayl şəkil deyil");
                 return View();
             }
+            if (sliderImg.CheckFileSize(1))
+            {
+                ModelState.AddModelError("ImageFile", "Yüklədiyiniz şəkil 2mb-dan artıq olmamalıdır");
+                return View();
+            }
+            string newSliderImgName = Guid.NewGuid() + sliderImg.CutFileName();
+            sliderImg.SaveFile(Path.Combine("imgs", "vendor", newSliderImgName));
+            slider.ImageUrl = newSliderImgName;
 
-           
 
-            slider.ImageUrl = await slider.ImageFile.FileCreate(_env.WebRootPath,"assets/imgs/slider");
+
             await _context.Sliders.AddAsync(slider);
             await _context.SaveChangesAsync();
 
